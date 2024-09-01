@@ -15,13 +15,15 @@ abstract class Vehicle {
         return rentalRate * duration;
     }
 
-    public abstract void setRentalRate(double rentalRate);
+    public void setRentalRate(double rentalRate){
+        this.rentalRate = rentalRate;
+    }
 
     public double getRentalRate(){
         return rentalRate;
     }
 
-    public String getbrand() {
+    public String getBrand() {
         return brand;
     }
 
