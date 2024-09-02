@@ -1,4 +1,3 @@
-
 public class Main {
     public static void main(String[] args) {
         Vehicle car = new Car("Toyota", "Camry", 2020, 4, 5, 50.0, 3);

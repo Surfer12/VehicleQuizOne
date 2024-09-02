@@ -11,16 +11,16 @@ abstract class Vehicle {
         this.year = year;
     }
 
-    public double calculateRentalCost(){
+    public double calculateRentalCost() {
         return rentalRate * duration;
     }
 
-    public void setRentalRate(double rentalRate){
-        this.rentalRate = rentalRate;
+    public double getRentalRate() {
+        return rentalRate;
     }
 
-    public double getRentalRate(){
-        return rentalRate;
+    public void setRentalRate(double rentalRate) {
+        this.rentalRate = rentalRate;
     }
 
     public String getBrand() {
@@ -35,12 +35,12 @@ abstract class Vehicle {
         return year;
     }
 
-    public void displayCost(){
+    public void displayCost() {
         System.out.println("The cost of renting this vehicle for " + duration + " days is $" + calculateRentalCost());
     }
 
-    public void displayVehicleInfo(){
+    public void displayVehicleInfo() {
         System.out.println("This vehicle is the brand: " + brand + ". The model is: " + model +
-                ". The year is: " + year +"." );
+                ". The year is: " + year + ".");
     }
 }
